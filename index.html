@@ -26,8 +26,9 @@
       place-items: center;
       background: radial-gradient(circle at top, var(--bg2), var(--bg1));
       font-family: system-ui, sans-serif;
-      overflow: hidden;
       padding: 16px;
+	  min-height: 100vh;
+      overflow-y: auto; 
     }
 
     /* FULL-SCREEN CONFETTI CANVAS */
@@ -126,11 +127,7 @@
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
-	body {
-    	/* Ensures the body takes up at least the full height of the viewport */
-    	min-height: 100vh; 
-    }
-  	html, body {
+  	html{
     	/* Allows scrolling on the Y-axis if content exceeds the viewport height */
     	overflow-y: auto; 
   	}
@@ -317,5 +314,6 @@
 </body>
 
 </html>
+
 
 
