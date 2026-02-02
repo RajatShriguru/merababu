@@ -126,6 +126,14 @@
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
+	body {
+    	/* Ensures the body takes up at least the full height of the viewport */
+    	min-height: 100vh; 
+    }
+  	html, body {
+    	/* Allows scrolling on the Y-axis if content exceeds the viewport height */
+    	overflow-y: auto; 
+  	}
   </style>
 </head>
 
@@ -309,4 +317,5 @@
 </body>
 
 </html>
+
 
